@@ -5,24 +5,19 @@ import React from 'react';
 import { StyleSheet, Text, TouchableOpacity, View, ViewPropTypes } from 'react-native';
 import Color from './Color';
 
-export default function Send({ text, containerStyle, onSend, children, textStyle, label, alwaysShowSend }) {
-  if (alwaysShowSend || text.trim().length > 0) {
-    return (
-      <TouchableOpacity
-        testID="send"
-        accessible
-        accessibilityLabel="send"
-        style={[styles.container, containerStyle]}
-        onPress={() => {
-          onSend({ text: text.trim() }, true);
-        }}
-        accessibilityTraits="button"
-      >
-        <View>{children || <Text style={[styles.text, textStyle]}>{label}</Text>}</View>
-      </TouchableOpacity>
-    );
-  }
-  return <View />;
+export default function Send({ text, containerStyle, onSend, children, textStyle, label }) {
+  let sendStyle = (text.trim().length > 0) ? styles.text : textStyle;
+  return (
+    <TouchableOpacity
+      style={containerStyle}
+      onPress={() => {
+        onSend({ text: text.trim() }, true);
+      }}
+      accessibilityTraits="button"
+    >
+      <View>{children || <Text style={sendStyle}>{label}</Text>}</View>
+    </TouchableOpacity>
+  );
 }
 
 const styles = StyleSheet.create({
@@ -33,9 +28,8 @@ const styles = StyleSheet.create({
   text: {
     color: Color.defaultBlue,
     fontWeight: '600',
-    fontSize: 17,
+    fontSize: 15,
     backgroundColor: Color.backgroundTransparent,
-    marginBottom: 12,
     marginLeft: 10,
     marginRight: 10,
   },

@@ -22,7 +22,8 @@ export default class Bubble extends React.PureComponent {
     if (this.props.onLongPress) {
       this.props.onLongPress(this.context, this.props.currentMessage);
     } else if (this.props.currentMessage.text) {
-      const options = ['Copy Text', 'Cancel'];
+      // const options = ['Copy Text', 'Cancel'];
+      const options = ['复制', '取消'];
       const cancelButtonIndex = options.length - 1;
       this.context.actionSheet().showActionSheetWithOptions(
         {

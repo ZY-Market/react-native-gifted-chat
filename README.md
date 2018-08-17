@@ -65,13 +65,13 @@
 
 ## Installation
 
-* Using [npm](https://www.npmjs.com/#getting-started): `npm install react-native-gifted-chat --save`
-* Using [Yarn](https://yarnpkg.com/): `yarn add react-native-gifted-chat`
+* Using [npm](https://www.npmjs.com/#getting-started): `npm install zy-react-native-gifted-chat --save`
+* Using [Yarn](https://yarnpkg.com/): `yarn add zy-react-native-gifted-chat`
 
 ## Example
 
 ```jsx
-import { GiftedChat } from 'react-native-gifted-chat'
+import { GiftedChat } from 'zy-react-native-gifted-chat'
 
 class Example extends React.Component {
   state = {
