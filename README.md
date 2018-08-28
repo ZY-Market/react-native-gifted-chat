@@ -22,7 +22,7 @@
   <a href="https://circleci.com/gh/FaridSafi/react-native-gifted-chat"><img src="https://circleci.com/gh/FaridSafi/react-native-gifted-chat.svg?style=shield" alt="build"></a>
   <a href="https://travis-ci.org/FaridSafi/react-native-gifted-chat"><img src="https://api.travis-ci.org/FaridSafi/react-native-gifted-chat.svg" alt="deployed"></a>
   <a href="https://codecov.io/gh/FaridSafi/react-native-gifted-chat"><img src="https://codecov.io/gh/FaridSafi/react-native-gifted-chat/coverage.svg"></a>
-  <a title='License' href="https://github.com/FaridSafi/react-native-gifted-chat/blob/master/LICENSE" height="18">
+  <a title='License' href="https://github.com/ZY-Market/react-native-gifted-chat/blob/master/LICENSE" height="18">
     <img src='https://img.shields.io/badge/license-MIT-blue.svg' />
   </a>
 </p>
@@ -40,7 +40,7 @@
 </p>
 <p align="center">
   <a href="https://pusher.com/chatkit?utm_source=github&utm_campaign=react-native-gifted-chat-sponsorship">
-    <img width="650" src="https://github.com/bookercodes/react-native-gifted-chat/blob/master/media/chatit-banner.png?raw=true" alt="Pusher Chatkit"></a>
+    <img width="650" src="https://github.com/ZY-Market/react-native-gifted-chat/blob/master/media/chatit-banner.png?raw=true" alt="Pusher Chatkit"></a>
 </p>
 
 ## Features
@@ -179,7 +179,7 @@ e.g. System Message
 * **`renderAvatarOnTop`** _(Bool)_ - Render the message avatar at the top of consecutive messages, rather than the bottom; default is `false`
 * **`renderBubble`** _(Function)_ - Custom message bubble
 * **`renderSystemMessage`** _(Function)_ - Custom system message
-* **`onLongPress`** _(Function(`context`, `message`))_ - Callback when a message bubble is long-pressed; default is to show an ActionSheet with "Copy Text" (see [example using `showActionSheetWithOptions()`](https://github.com/FaridSafi/react-native-gifted-chat/blob/master@%7B2017-09-25%7D/src/Bubble.js#L96-L119))
+* **`onLongPress`** _(Function(`context`, `message`))_ - Callback when a message bubble is long-pressed; default is to show an ActionSheet with "Copy Text" (see [example using `showActionSheetWithOptions()`](https://github.com/ZY-Market/react-native-gifted-chat/blob/master@%7B2017-09-25%7D/src/Bubble.js#L96-L119))
 * **`inverted`** _(Bool)_ - Reverses display order of `messages`; default is `true`
 * **`renderMessage`** _(Function)_ - Custom message container
 * **`renderMessageText`** _(Function)_ - Custom message text
@@ -194,7 +194,7 @@ e.g. System Message
 * **`renderInputToolbar`** _(Function)_ - Custom message composer container
 * **`renderComposer`** _(Function)_ - Custom text input message composer
 * **`renderActions`** _(Function)_ - Custom action button on the left of the message composer
-* **`renderSend`** _(Function)_ - Custom send button; you can pass children to the original `Send` component quite easily, for example to use a custom icon ([example](https://github.com/FaridSafi/react-native-gifted-chat/pull/487))
+* **`renderSend`** _(Function)_ - Custom send button; you can pass children to the original `Send` component quite easily, for example to use a custom icon ([example](https://github.com/ZY-Market/react-native-gifted-chat/pull/487))
 * **`renderAccessory`** _(Function)_ - Custom second line of actions below the message composer
 * **`onPressActionButton`** _(Function)_ - Callback when the Action button is pressed (if set, the default `actionSheet` will not be used)
 * **`bottomOffset`** _(Integer)_ - Distance of the chat from the bottom of the screen (e.g. useful if you display a tab bar)
@@ -252,7 +252,7 @@ If you are using Create React Native App / Expo, no Android specific installatio
   * adding KeyboardAvoidingView after GiftedChat
   * adding an opaque background status bar on app.json https://docs.expo.io/versions/latest/guides/configuration.html#androidstatusbar
 
-* If you plan to use `GiftedChat` inside a `Modal`, see [#200](https://github.com/FaridSafi/react-native-gifted-chat/issues/200).
+* If you plan to use `GiftedChat` inside a `Modal`, see [#200](https://github.com/ZY-Market/react-native-gifted-chat/issues/200).
 ## Notes for local development
 
 You can use [`wml`](https://github.com/wix/wml) to keep the example app in sync
@@ -269,15 +269,15 @@ If you have any issues, you can clear your watches using `watchman watch-del-all
 
 ## Questions
 
-* [How can I set Bubble color for each user?](https://github.com/FaridSafi/react-native-gifted-chat/issues/672)
-* [How can I pass style props to InputToolbar design and customize it's color and other styles properties?](https://github.com/FaridSafi/react-native-gifted-chat/issues/662)
-* [How can I change the color of the message box?](https://github.com/FaridSafi/react-native-gifted-chat/issues/640)
-* [Is there a way to manually dismiss the keyboard?](https://github.com/FaridSafi/react-native-gifted-chat/issues/647)
+* [How can I set Bubble color for each user?](https://github.com/ZY-Market/react-native-gifted-chat/issues/672)
+* [How can I pass style props to InputToolbar design and customize it's color and other styles properties?](https://github.com/ZY-Market/react-native-gifted-chat/issues/662)
+* [How can I change the color of the message box?](https://github.com/ZY-Market/react-native-gifted-chat/issues/640)
+* [Is there a way to manually dismiss the keyboard?](https://github.com/ZY-Market/react-native-gifted-chat/issues/647)
 * [I want to implement a popover that pops right after clicking on a specific avatar,
-  what is the best implementation in this case and how?](https://github.com/FaridSafi/react-native-gifted-chat/issues/660)
-* [Why Textinput is hidden on Android?](https://github.com/FaridSafi/react-native-gifted-chat/issues/680#issuecomment-359699364)
-* [How to use renderLoading?](https://github.com/FaridSafi/react-native-gifted-chat/issues/298)
-* [Can I use MySql to save the message?](https://github.com/FaridSafi/react-native-gifted-chat/issues/738)
+  what is the best implementation in this case and how?](https://github.com/ZY-Market/react-native-gifted-chat/issues/660)
+* [Why Textinput is hidden on Android?](https://github.com/ZY-Market/react-native-gifted-chat/issues/680#issuecomment-359699364)
+* [How to use renderLoading?](https://github.com/ZY-Market/react-native-gifted-chat/issues/298)
+* [Can I use MySql to save the message?](https://github.com/ZY-Market/react-native-gifted-chat/issues/738)
 
 ## License
 
